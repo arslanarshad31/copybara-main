@@ -1,0 +1,11 @@
+core.workflow(
+    name = "default",
+    origin = git.github_origin(
+      url = "https://github.com/google/copybara.git",
+      ref = "master",
+    ),
+    destination = git.github_destination(
+        url = "https://github.com/arslanarshad31/copybara-test.git",
+        ref = "master",
+    )
+)

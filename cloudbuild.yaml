@@ -1,0 +1,9 @@
+# GCB configuration file
+# To learn more about GCB, go to https://cloud.google.com/container-builder/docs/
+steps:
+- name: gcr.io/cloud-builders/bazel
+  entrypoint: "bash"
+  args: ["-c", "./cloudbuild.sh test ... --test_output=errors --sandbox_tmpfs_path=/tmp -j 1000"]
+options:
+  machine_type: N1_HIGHCPU_32
+timeout: 30m
