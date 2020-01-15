@@ -1,6 +1,7 @@
 #!/bin/bash -e
-
+dfasdfsadfasdfasf
 # Build script for Google Cloud Build
+asdasdasdasd
 
 function log() {
   d=$(date +'%Y-%m-%d %H:%M:%S')
